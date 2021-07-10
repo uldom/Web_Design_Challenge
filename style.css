@@ -12,22 +12,13 @@ a.navbar-brand{
   padding-bottom: 80px;
   overflow: hidden;
 }
-
+​
 .content.bg-white {
   margin-top: 15px;
 }
-
-/* .viz-box:hover */
-.viz-box:hover {
-  border-color: rgb(25, 56, 156);
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 5px;
-}
-
 /* footer styling */
 .page-footer{
-  background-color: rgb(92, 90, 90);
+  background-color: rgb(173, 173, 173);
   margin-top: 50px;
   position: fixed;
   bottom: 0;
@@ -43,7 +34,7 @@ h3{
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 15px;
 }
-
+​
 /* image styling*/
 .img-thumbnail{
   padding:10px;
@@ -70,46 +61,56 @@ body{
   padding-top: 20px;
   padding-bottom:40px;
 }
-/* image border styling */
+/* image border styling  - probably ou might not use it*/
 .pic{
   border: 3px solid rgb(81, 175, 160);
 }
+​
+/* box hover*/
+.viz-box:hover {
+  border-color: rgb(81, 175, 160);
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 5px;
+}
+​
+​
 /* navbar styling */
 .navbar{
-  max-height: 57px;
+  /* max-height: 57px; */
   padding-top:0px;
   padding-bottom: 0px;
   padding-right:40px;
 }
-
+​
 .nav-item.dropdown.show {
   background-color: #ddd;
 }
-
+​
 .active, .dropdown-menu .dropdown-item:active a:hover{
-  background-color:#E7E7E7!important; 
+  background-color:#E7E7E7; 
 }
-
+​
 .dropdown-item{
-  color: #6D8092 !important; 
+  color: #6D8092; 
 }
-
+​
 .dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
-  background-color:#E7E7E7 !important; 
+  background-color:#E7E7E7; 
 }
   a{
   color: #6D8092;
   font-size: 15px; 
   }
-
+​
 .nav-link:hover{
-  background-color:#E7E7E7 !important;
+  background-color:#E7E7E7;
 }
-
+​
 .navbar-brand:hover{
-  color: rgb(175, 175, 175) !important;
+  color: rgb(175, 175, 175);
 }
-
+​
 .dropdown-menu {
   margin: 0;
 }
@@ -119,8 +120,8 @@ body{
   padding-bottom: 80px;
   overflow: hidden;
 }
-
-
+​
+​
 .content.bg-white {
   margin-top: 15px;
 }
@@ -141,17 +142,24 @@ tr>td:nth-child(9),
 tr>td:nth-child(10) {
   text-align: right;
 }
+​
 /* small screen adjustments */
-@media(max-width:768px){
+/* here */
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+​
+/* here */
   .navbar.bg-light{
-      background-color: rgb(81, 175, 160)!important;    
+      background-color: rgb(81, 175, 160);    
   }
   .navbar-collapse{
-      background-color: #f8f9fa;
+      background-color:  rgb(173, 173, 173);
   }
   .nav-link {
-      color: white !important;
+      color: white;
   }
   .navbar{
       padding:inherit;
   }
+}
